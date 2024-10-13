@@ -26,15 +26,25 @@ h6 {
   margin-bottom: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
-  padding: 0px 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -44,6 +54,7 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .header-logo-font {
   font-family: "Raleway", sans-serif;
@@ -65,10 +76,13 @@ h6 {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #2e2f42;
+  display: flex;
+  align-items: center;
 }
 .header-navigation-list {
-  display: flex;
   color: #2e2f42;
+  display: flex;
+  gap: 40px;
 }
 .header-navigation-list a:hover,
 .header-navigation-list a:focus {
@@ -79,6 +93,14 @@ h6 {
   font-weight: 400;
   font-style: normal;
   color: #434455;
+  display: flex;
+
+  gap: 40px;
+  margin-left: auto;
+}
+.contacts {
+  display: flex;
+  gap: 40px;
 }
 .header-address-list {
   font-size: 16px;
@@ -93,7 +115,9 @@ h6 {
 
 .main-section {
   background: #2e2f42;
-  padding: 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
 }
 .main-title {
   font-weight: 700;
@@ -102,7 +126,9 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
+
+  max-width: 496px;
+  margin: 0 auto 48px auto;
 }
 .main-button {
   font-family: "Roboto", sans-serif;
@@ -114,6 +140,10 @@ h6 {
   letter-spacing: 0.04em;
   border-radius: 4px;
   cursor: pointer;
+  min-width: 169px;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
 }
 .main-button:hover,
 .main-button:focus {
@@ -133,8 +163,16 @@ h6 {
   overflow: hidden;
 }
 .our-features {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.feature-item {
+  width: calc(100% - (3 * 24px)) / 4;
+}
+
 .features {
   font-weight: 500;
   font-size: 20px;
@@ -153,7 +191,7 @@ h6 {
 
 .our-team {
   background-color: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 .title {
   font-weight: 700;
@@ -163,17 +201,33 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  margin: 72px;
+  max-width: 162px;
+  margin: 0 auto 72px;
+}
+.team-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 .team-cards {
   background-color: #fff;
+  width: calc((100% - (3 * 24px)) / 4);
 }
 .photo {
-  width: 264px;
-  height: 260px;
+  width: 100%;
+  max-width: 264px;
+  height: auto;
 }
 .team-info {
   padding: 32px 16px;
+  max-width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .team-features {
@@ -195,7 +249,7 @@ h6 {
   margin-bottom: 32px;
 }
 .our-portfolio {
-  padding: 120px 156px;
+  padding: 120px;
   margin-bottom: 72px;
 }
 .info {
@@ -210,6 +264,15 @@ h6 {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 8px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-item {
+  width: calc ((100% - (5 * 24px)) / 6);
 }
 .portfolio-features-text {
   font-weight: 400;
@@ -252,4 +315,6 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }

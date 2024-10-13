@@ -67,6 +67,7 @@ h6 {
   color: #2e2f42;
 }
 .header-navigation-list {
+  display: flex;
   color: #2e2f42;
 }
 .header-navigation-list a:hover,
@@ -92,6 +93,7 @@ h6 {
 
 .main-section {
   background: #2e2f42;
+  padding: 188px;
 }
 .main-title {
   font-weight: 700;
@@ -100,6 +102,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 .main-button {
   font-family: "Roboto", sans-serif;
@@ -129,12 +132,16 @@ h6 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.our-features {
+  padding: 120px 156px;
+}
 .features {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -146,9 +153,7 @@ h6 {
 
 .our-team {
   background-color: #f4f4fd;
-}
-.description {
-  background-color: #fff;
+  padding: 120px 156px;
 }
 .title {
   font-weight: 700;
@@ -158,7 +163,19 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin: 72px;
 }
+.team-cards {
+  background-color: #fff;
+}
+.photo {
+  width: 264px;
+  height: 260px;
+}
+.team-info {
+  padding: 32px 16px;
+}
+
 .team-features {
   font-weight: 500;
   font-size: 20px;
@@ -166,6 +183,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #2e2f42;
   background-color: #ffffff;
+  margin-bottom: 8px;
 }
 .team-features-text {
   font-weight: 400;
@@ -174,6 +192,14 @@ h6 {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
+  margin-bottom: 32px;
+}
+.our-portfolio {
+  padding: 120px 156px;
+  margin-bottom: 72px;
+}
+.info {
+  padding: 32px 16px;
 }
 .title-portfolio {
   font-weight: 700;
@@ -183,6 +209,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-features-text {
   font-weight: 400;
@@ -190,9 +217,14 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
 }
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-right: 1200px;
+  padding-bottom: 100px;
+  padding-left: 156px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -202,6 +234,7 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 .footer-logo-font {
   font-family: "Raleway", sans-serif;
@@ -211,6 +244,7 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 .footer-text {
   font-weight: 400;

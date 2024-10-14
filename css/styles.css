@@ -6,7 +6,6 @@ body {
 }
 a {
   text-decoration: none;
-  padding: 24px 0; /* added padding */
 }
 ul {
   list-style-type: none;
@@ -56,6 +55,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  padding: 24px 0; /* added padding */
 }
 .header-logo-font {
   font-family: "Raleway", sans-serif;

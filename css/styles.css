@@ -38,7 +38,6 @@ img {
 }
 
 .header {
-  padding: 24px 0; /* added padding */
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -84,6 +83,7 @@ img {
   color: #2e2f42;
   display: flex;
   gap: 40px;
+  padding: 24px 0; /* added padding */
 }
 .header-navigation-list a:hover,
 .header-navigation-list a:focus {

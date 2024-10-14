@@ -41,9 +41,9 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
+  /* deleted padding */
   display: flex;
   align-items: center;
-  padding: 24px 0; /* added padding */
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -202,7 +202,7 @@ img {
   padding: 120px 0;
 }
 .team-container {
-  padding: 32px 0 32px; /* changed team container and padding */
+  padding: 32px 0; /* changed team container and padding */
 }
 .title {
   font-weight: 700;
@@ -217,7 +217,7 @@ img {
 .team-list {
   display: flex;
   flex-direction: row;
-  column-gap: 24px;
+  gap: 24px; /* changed gap */
   align-items: center;
   justify-content: center;
 }
@@ -228,7 +228,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  margin-right: 24px; /* added margin-right */
+  /* deleted margin right 24px */
 }
 .team-cards:last child {
   margin-right: 0; /* added last child */
@@ -265,40 +265,39 @@ img {
 }
 
 .our-portfolio {
-  padding: 120px 0; /*changed padding */
+  padding: 120px 0;
   margin-bottom: 72px;
 }
 .portfolio-container {
-  border: 1px solid #e7e9fc; /* added border */
-  border-top: none;
-}
+  .title-portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin: 0 auto 72px;
+  }
 
-.title-portfolio {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin: 0 auto 72px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-}
-.portfolio-item {
-  width: calc((100% - (2 * 24px)) / 3);
-}
-.info {
-  padding: 32px 16px;
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .portfolio-item {
+    width: calc((100% - (2 * 24px)) / 3);
+  }
+  .info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc; /* added border */
+    border-top: none;
+  }
 }
 .portfolio-features {
   font-weight: 500;

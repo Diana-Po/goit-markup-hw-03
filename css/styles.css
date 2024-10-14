@@ -44,6 +44,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  padding: 24px 0; /* added padding */
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -331,7 +332,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-  display: inline-block; /* addeed inline-block */
+  display: inline-block;
 }
 .footer-logo-font {
   font-family: "Raleway", sans-serif;

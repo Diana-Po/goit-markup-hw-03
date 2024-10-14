@@ -170,7 +170,12 @@ img {
   gap: 24px;
 }
 .feature-item {
-  width: calc(100% - (3 * 24px)) / 4;
+  width: calc((100% - (3 * 24px)) / 4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .features {
@@ -253,6 +258,10 @@ img {
   padding: 120px;
   margin-bottom: 72px;
 }
+.portfolio-container {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 
 .title-portfolio {
   font-weight: 700;
@@ -276,7 +285,7 @@ img {
   max-width: 100%;
 }
 .portfolio-item {
-  width: calc(100% - (5 * 24px)) / 6;
+  width: calc((100% - (2 * 24px)) / 3);
 }
 .info {
   padding: 32px 16px;

@@ -6,6 +6,7 @@ body {
 }
 a {
   text-decoration: none;
+  padding: 24px 0; /* added padding */
 }
 ul {
   list-style-type: none;
@@ -131,7 +132,9 @@ img {
   margin: 0 auto 48px auto;
 }
 .main-button {
+  /* added height and border */
   font-family: "Roboto", sans-serif;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -144,6 +147,7 @@ img {
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
+  border: none;
 }
 .main-button:hover,
 .main-button:focus {
@@ -198,6 +202,10 @@ img {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+.team-container {
+  /* added team container and padding */
+  padding: 32px 0;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -222,6 +230,10 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-cards:not(:last child) {
+  /* added margin-right */
+  margin-right: 24px;
 }
 .photo {
   width: 100%;
@@ -261,6 +273,7 @@ img {
 .portfolio-container {
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding: 120px 0;
 }
 
 .title-portfolio {
@@ -310,10 +323,7 @@ img {
 }
 .footer {
   background: #2e2f42;
-  padding-top: 100px;
-  padding-right: 1200px;
-  padding-bottom: 100px;
-  padding-left: 156px;
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -334,6 +344,7 @@ img {
   text-transform: uppercase;
   color: #f4f4fd;
   margin-bottom: 16px;
+  display: inline-block; /* addeed inline-block */
 }
 .footer-text {
   font-weight: 400;

@@ -270,7 +270,7 @@ img {
 
 .our-portfolio {
   padding: 120px 0;
-  margin-bottom: 72px;
+  /* deleted margin-bottom: 72px; */
 }
 
 .title-portfolio {
